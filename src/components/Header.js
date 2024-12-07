@@ -36,7 +36,7 @@ const Header = () =>{
 
 
     return(
-        <div className = "fixed bg-gradient-to-b from-black  py-2 pb-4 w-screen flex justify-around items-center">
+        <div className = "fixed z-30 bg-gradient-to-b from-black  py-2 pb-4 w-screen flex justify-around items-center">
         <div className  = "container px-20">
             <img src  = {LOGO}
              alt = "logo"
@@ -45,7 +45,7 @@ const Header = () =>{
              </div>
           { user && user.displayName ? (  <div className = "flex gap-3 px-20">
              <p className = "bg-red-700 rounded-full w-10 h-10 text-center font-bold text-3xl text-white uppercase">{user?.displayName[0]}</p>
-         <button className = "text-white font-semibold text-xl" onClick = {handleSignOut}>SignOut</button>
+         <button className = "text-white font-semibold text-lg" onClick = {handleSignOut}>SignOut</button>
          </div>) :null  }
 
         </div>
